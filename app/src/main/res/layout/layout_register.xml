@@ -72,41 +72,73 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
             android:background="@drawable/edt"
-            android:hint="Name" />
+            android:hint="Email" />
 
         <EditText
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
             android:background="@drawable/edt"
-            android:hint="Name" />
+            android:hint="Password" />
 
         <EditText
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
             android:background="@drawable/edt"
-            android:hint="Name" />
+            android:hint="Phone Number" />
 <RadioGroup
+    android:padding="@dimen/_10sdp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <RadioButton
         android:button="@drawable/selecter_checkbox2"
-
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:checked="true"
-        android:text="Lưu thông tin đăng nhập" />
+        android:text="I agree with the Teams Condition  Privacy Policy" />
 
     <RadioButton
+        android:layout_marginTop="@dimen/_5sdp"
         android:button="@drawable/selecter_checkbox2"
         android:id="@+id/cbSaveLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:checked="true"
-        android:text="Lưu thông tin đăng nhập" />
+        android:text="New Account" />
+
 </RadioGroup>
 
+<Button
+    android:layout_gravity="center"
+    android:textColor="@color/white"
+    android:background="@drawable/bg_btnlogin"
+    android:text="Join us"
+    android:layout_width="@dimen/_270sdp"
+    android:layout_height="@dimen/_30sdp"/>
+<LinearLayout
+
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Do have already account ?"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Login"
+        android:textColor="@color/black"
+        />
+</LinearLayout>
 
 
     </LinearLayout>
