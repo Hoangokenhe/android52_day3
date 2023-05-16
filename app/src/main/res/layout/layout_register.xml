@@ -61,6 +61,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/edtName"
             android:paddingLeft="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,6 +70,7 @@
             android:hint="Name" />
 
         <EditText
+            android:id="@+id/edtEmail"
             android:paddingLeft="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -86,7 +88,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:paddingLeft="@dimen/_10sdp"
-                android:id="@+id/lg_password"
+                android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edt"
@@ -106,7 +108,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:paddingLeft="@dimen/_10sdp"
-                android:id="@+id/lg_phoneNumber"
+                android:id="@+id/edtPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edt"
@@ -142,6 +144,7 @@
 </RadioGroup>
 
 <Button
+    android:id="@+id/btnJoinUs"
     android:layout_gravity="center"
     android:textColor="@color/white"
     android:background="@drawable/bg_btnlogin"
@@ -161,6 +164,7 @@
         android:textColor="@color/black"
         />
     <TextView
+        android:id="@+id/tvLogin"
         android:layout_marginLeft="@dimen/_2sdp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
