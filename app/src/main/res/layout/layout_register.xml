@@ -4,16 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+    android:background="#FFF"
     android:padding="@dimen/_20ssp">
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <TextView
-
             android:layout_width="@dimen/_150sdp"
             android:layout_height="wrap_content"
             android:text="Join us to start Crypto trade!"
@@ -62,38 +59,37 @@
 
         <EditText
             android:id="@+id/edtName"
-            android:paddingLeft="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_15sdp"
             android:background="@drawable/edt"
-            android:hint="Name" />
+            android:hint="Name"
+            android:paddingLeft="@dimen/_10sdp" />
 
         <EditText
             android:id="@+id/edtEmail"
-            android:paddingLeft="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
             android:background="@drawable/edt"
-            android:hint="Email" />
+            android:hint="Email"
+            android:paddingLeft="@dimen/_10sdp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:endIconMode="password_toggle"
-            app:hintEnabled="false"
             android:layout_marginTop="@dimen/_12sdp"
-            >
+            app:endIconMode="password_toggle"
+            app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:paddingLeft="@dimen/_10sdp"
                 android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edt"
                 android:hint="Password"
                 android:inputType="textPassword"
+                android:paddingLeft="@dimen/_10sdp"
                 android:singleLine="true" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -101,79 +97,77 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:endIconMode="password_toggle"
-            app:hintEnabled="false"
             android:layout_marginTop="@dimen/_12sdp"
-            >
+            app:endIconMode="password_toggle"
+            app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:paddingLeft="@dimen/_10sdp"
                 android:id="@+id/edtPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edt"
                 android:hint="Phone Number"
                 android:inputType="numberPassword"
+                android:paddingLeft="@dimen/_10sdp"
                 android:singleLine="true" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
 
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selecter_checkbox2"
+                android:text="I agree with the Teams Condition  Privacy Policy"
+                android:textColor="@color/black" />
 
+            <RadioButton
+                android:id="@+id/cbSaveLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:button="@drawable/selecter_checkbox2"
+                android:text="New Account" />
 
-<RadioGroup
-    android:padding="@dimen/_10sdp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <RadioButton
-        android:button="@drawable/selecter_checkbox2"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="I agree with the Teams Condition  Privacy Policy" />
+        </RadioGroup>
 
-    <RadioButton
-        android:layout_marginTop="@dimen/_5sdp"
-        android:button="@drawable/selecter_checkbox2"
-        android:id="@+id/cbSaveLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Account" />
+        <Button
+            android:id="@+id/btnJoinUs"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btnlogin"
+            android:text="Join us"
+            android:textColor="@color/white" />
 
-</RadioGroup>
+        <LinearLayout
 
-<Button
-    android:id="@+id/btnJoinUs"
-    android:layout_gravity="center"
-    android:textColor="@color/white"
-    android:background="@drawable/bg_btnlogin"
-    android:text="Join us"
-    android:layout_width="@dimen/_270sdp"
-    android:layout_height="@dimen/_30sdp"/>
-<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
 
-    android:layout_gravity="center"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:text="Do have already account ?"
-        android:textColor="@color/black"
-        />
-    <TextView
-        android:id="@+id/tvLogin"
-        android:layout_marginLeft="@dimen/_2sdp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:text="Login"
-        android:textColor="@color/black"
-        />
-</LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Do have already account ?"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
 
 
     </LinearLayout>
